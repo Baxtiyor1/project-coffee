@@ -22,7 +22,50 @@
 .header__link:hover{
     color:#333D4B;
 }
-
+@media screen and (max-width: 689px) {
+    .header__nav{
+        width: 689px;
+    }
+}
+.check{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.header__button{
+    display: none;
+}
+@media screen and (max-width: 327px) {
+    .header__nav{
+        width: 327px;
+    }
+    .header__pic{
+        width: 163px;
+        height: 18px;
+    }
+    #check:checked ~ .header__menu{
+        display: block;
+    }
+    .header__menu{
+        position: absolute;
+        /* left: 0; */
+        right: 0;
+        top: 112px;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+    .header__button{
+        color: #fff;
+        display: block;
+        background-color: transparent;
+        border: transparent;
+    }
+}
 /* ------------- header finish ------------- */
 
 /* ------------- Main / intro section start ------------- */
@@ -72,11 +115,42 @@
 .intro__link:active{
     background-color: #66D2CF;
 }
+@media screen and (max-width: 689px) {
+    .intro__list{
+        width: 689px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 327px) {
+    .intro__list{
+        padding-left: 0;
+        align-items:center;
+        width: 327px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -558px;
+    }
+    .intro__title{
+        width: 279px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .intro__text{
+        width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
 
 /* ------------- intro section finish ------------- */
 
 /* ------------- product section start ------------- */
-
 .product__fon{
     height: 196px;
     font-weight: 900;
@@ -99,6 +173,7 @@
     margin-top: -250px;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
 }
@@ -124,7 +199,16 @@
     text-align: center;
     color: #333D4B;
 }
-
+@media screen and (max-width: 689px) {
+    .product__fon{
+        width: 689px;
+        font-size: 40px;
+    }
+    .product__fon--box{
+        width: 689px;
+        background-color:#0E8784;
+    }
+}
 /* ------------- product section finish ------------- */
 
 /* ------------- choose section start ------------- */
