@@ -22,6 +22,12 @@ h1,h2 ,h3,h4,h5, h6, a{
     }
     
 }
+@media screen and (max-width: 327px) {
+    .container{
+        width: 327px;
+    }
+    
+}
 a{
     text-decoration: none;
 }
