@@ -80,7 +80,7 @@
             bottom: 0;
             top: 69px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-image: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
             display: none;
         }
         &__item{
@@ -90,7 +90,7 @@
         &__link{
             font-size: 25px;
             font-weight: bold;
-            color:#fff;
+            color:#000;
         }
         &__button{
             color: #fff;
@@ -124,7 +124,7 @@
             bottom: 0;
             top: 69px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
+            // background-color: rgba(0, 0, 0, 0.7);
             display: none;
         }
         &__item{
@@ -134,7 +134,7 @@
         &__link{
             font-size: 25px;
             font-weight: bold;
-            color:#fff;
+            color:#000;
         }
         &__button{
             color: #fff;
@@ -1147,8 +1147,6 @@
         }
         &__menu{
             width: 80%;
-        }
-        &__item{
         }
         &__link{
             font-size: 13px;
