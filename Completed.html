@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Completed</title>
+    <title>Subscribe</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
+    
     <header class="header">
         <div class="container">
             <nav class="header__nav">
@@ -47,23 +47,23 @@
         <section class="pick">
             <div class="container">
                 <div class="pick__list">
-                    <div class="plan__line">
+                    <div class="plan__line pick__line">
                         <span class="pick__line--circle"></span>
                         <span class="pick__line--circle"></span>
                         <span class="pick__line--circle"></span>
                     </div>
-                    <ul class="plan__menu">
-                        <li class="plan__item">
+                    <ul class="pick__menu">
+                        <li class="pick__item">
                             <h2 class="pick__item--nomber">01</h2>
                             <h2 class="pick__item--title">Pick your coffee</h2>
                             <p class="pick__item--text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
                         </li>
-                        <li class="plan__item">
+                        <li class="pick__item">
                             <h2 class="pick__item--nomber">02</h2>
                             <h2 class="pick__item--title">Choose the frequency</h2>
                             <p class="pick__item--text">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
                         </li>
-                        <li class="plan__item">
+                        <li class="pick__item">
                             <h2 class="pick__item--nomber">03</h2>
                             <h2 class="pick__item--title">Receive and enjoy!</h2>
                             <p class="pick__item--text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
@@ -112,7 +112,7 @@
                                         <h3 class="card__box--title">Capsule</h3>
                                         <p class="card__box--text">Compatible with Nespresso systems and similar brewers</p>
                                     </li>
-                                    <li class="card__box--item">
+                                    <li class="card__box--item box-color">
                                         <h3 class="card__box--title">Filter</h3>
                                         <p class="card__box--text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
                                     </li>
@@ -132,7 +132,7 @@
                                         <h3 class="card__box--title">Single Origin</h3>
                                         <p class="card__box--text">Distinct, high quality coffee from a specific family-owned farm</p>
                                     </li>
-                                    <li class="card__box--item">
+                                    <li class="card__box--item box-color">
                                         <h3 class="card__box--title">Decaf</h3>
                                         <p class="card__box--text">Just like regular coffee, except the caffeine has been removed</p>
                                     </li>
@@ -148,7 +148,7 @@
                                     <img class="card__header--pic" src="./img/strelka.svg" alt="strelka" width="18" height="12">
                                 </div>
                                 <ul class="card__box">
-                                    <li class="card__box--item">
+                                    <li class="card__box--item box-color">
                                         <h3 class="card__box--title">250g</h3>
                                         <p class="card__box--text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
                                     </li>
@@ -176,7 +176,7 @@
                                         <h3 class="card__box--title">Filter</h3>
                                         <p class="card__box--text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
                                     </li>
-                                    <li class="card__box--item">
+                                    <li class="card__box--item box-color">
                                         <h3 class="card__box--title">Cafetiére</h3>
                                         <p class="card__box--text">Course ground beans specially suited for french press coffee</p>
                                     </li>
@@ -188,7 +188,7 @@
                                     <img class="card__header--pic" src="./img/strelka.svg" alt="strelka" width="18" height="12">
                                 </div>
                                 <ul class="card__box">
-                                    <li class="card__box--item">
+                                    <li class="card__box--item box-color">
                                         <h3 class="card__box--title">Every week</h3>
                                         <p class="card__box--text">$7.20 per shipment. Includes free first-class shipping.</p>
                                     </li>
@@ -217,7 +217,27 @@
                             <h2 class="order__text">“I drink my coffee as <span class="order__text--color">Filter</span>, with a <span class="order__text--color">Decaf</span> type of bean. <span class="order__text--color">250g</span> ground ala <span class="order__text--color">Cafetiére</span>, sent to me <span class="order__text--color">Every Week</span>.”</h2>
                         </div>
                     </div>
-                    <a class="order__link" href="#"><h3 class="order__link--text">Create my plan!</h3></a>
+                    <input class="check2" id="check2" type="checkbox">
+                    <label for="check2">
+                        <span><h3 class="order__link order__link--text">Create my plan!</h3></span>
+                    </label>
+                    
+                </div>
+                <div class="modal__box">
+                    <div class="modal">
+                        <div class="modal__list">
+                            <h2 class="modal__title">Order Summary</h2>
+                            <h3 class="modal__text">“I drink my coffee as <span class="order__text--color">Filter</span>, with a <span class="order__text--color">Decaf</span> type of bean. <span class="order__text--color">250g</span> ground ala <span class="order__text--color">Cafetiére</span>, sent to me <span class="order__text--color">Every Week</span>.”</h3>
+                            <p class="modal__commit">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+                            <div class="modal__footer">
+                                <h3 class="modal__footer--price">$14.00 / mo</h3>
+                                <input class="check3" id="check3" type="checkbox">
+                                <label for="check3">
+                                    <span><h3 class="order__link order__link--text modal__footer--link">Checkout</h3></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -251,6 +271,6 @@
             </nav>
         </div>
     </footer>
-
+    
 </body>
 </html>
