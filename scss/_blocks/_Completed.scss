@@ -72,7 +72,6 @@
         margin-top: 177px;
         padding:100px 150px 100px 85px;
         width: 1278px;
-        // height: 653px;
         border:1px solid #2C343E;
         background-color: #2C343E;
         border-radius: 15px;
@@ -177,7 +176,6 @@
 .card{
     &__list{
         margin-top: 160px;
-        // padding: 0 165px;
         display: flex;
         justify-content: space-around;
     }
@@ -188,7 +186,6 @@
         }
         &--item{
             padding: 24px 0;
-            // display: flex;
             border-bottom: 1px solid #83888F;
             mix-blend-mode: normal;
             opacity: 0.4;
@@ -250,8 +247,6 @@
         }
     }
     &__box{
-        // width: 228px;
-        // height: 250px;
         display: flex;
         list-style-type: none;
         &--item{
@@ -317,12 +312,10 @@
         }
         &__box{
             width: 100%;
-            // text-align: center;
             justify-content: space-between;
             &--item{
                 display: flex;
                 flex-direction: column;
-                // align-items: center;
                 padding: 0;
                 padding: 32px 0;
                 padding-left: 25px;
@@ -389,7 +382,6 @@
         margin-bottom: 55px;
         padding: 27px 64px;
         width: 730px;
-        // height: 208px;
         background-color: #2C343E;
     }
     &__title{
