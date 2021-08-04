@@ -453,7 +453,7 @@ a {
 }
 
 .product__item:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 
 .product__title {
@@ -720,19 +720,6 @@ a {
   list-style-type: none;
 }
 
-.choose__item {
-  margin-right: 30px;
-  text-align: center;
-  padding: 72px 48px 48px 48px;
-  width: 350px;
-  background: #0E8784;
-  border-radius: 8px;
-}
-
-.choose__item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .choose__menu--title {
   margin-top: 56px;
   margin-bottom: 24px;
@@ -748,6 +735,19 @@ a {
   line-height: 26px;
   text-align: center;
   color: #FEFCF7;
+}
+
+.choose__item {
+  margin-right: 30px;
+  text-align: center;
+  padding: 72px 48px 48px 48px;
+  width: 350px;
+  background: #0E8784;
+  border-radius: 8px;
+}
+
+.choose__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 770px) {
@@ -1896,6 +1896,10 @@ a {
   color: #333D4B;
 }
 
+.headquarters__item--pic {
+  display: none;
+}
+
 .Australia::before {
   margin-bottom: 46px;
   display: block;
@@ -1912,10 +1916,6 @@ a {
   width: 52px;
   height: 50px;
   background-image: url("../img/canada.svg");
-}
-
-.headquarters__item--pic {
-  display: none;
 }
 
 @media screen and (max-width: 770px) {
@@ -2286,6 +2286,7 @@ a {
 
 .card__box--item:hover {
   background-color: #FDD6BA;
+  color: #2C343E;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
